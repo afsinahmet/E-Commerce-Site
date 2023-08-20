@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TrendFashion</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <style type="text/css">
+        a{
+            text-decoration: auto !important;
+        }
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">TrendFashion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ürünler</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Tüm Ürünler</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="kategori-kadin.html">Kadın Giyim</a></li>
+                                <li><a class="dropdown-item" href="kategori-erkek.html">Erkek Giyim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="bize-ulasin.html">Bize Ulaşın</a></li>
+                    </ul>
+                      
+                        <form class="d-flex">
+                            <button class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#sepetModal">
+                                <i class="bi-cart-fill me-1"></i>
+                                Sepet
+                                <span class="badge bg-dark text-white ms-1 rounded-pill" id="sepetUrunSayisiBadge">0</span>
+                            </button>
+                        </form>
+
+                </div>
+            </div>
+        </nav>
+      
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="urunler/6.png" alt="..." /></div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">SKU: BST-598</div>
+                        <h1 class="display-5 fw-bolder">Omuz Çantası</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="fiyat">184.99₺</span>
+                        </div>
+                        <p class="lead">Pratik ve şık omuz çantamız, günlük hayatınızı kolaylaştırmak için tasarlandı. Şık tasarımıyla dikkat çeken bu çanta, geniş iç hacmi sayesinde ihtiyaçlarınızı organize etmenizi sağlar. Hafif ve dayanıklı malzeme kullanımıyla uzun ömürlü bir kullanım sunarken, ayarlanabilir askıları sayesinde konforlu bir taşıma deneyimi yaşatır. Tarzınızı yansıtan ve fonksiyonelliği bir araya getiren bu omuz çantası, günlük yaşamınızın vazgeçilmezi olmaya aday.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Sepete Ekle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="modal fade" id="sepetModal" tabindex="-1" aria-labelledby="sepetModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="sepetModalLabel">Sepet</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Ürün Adı</th>
+                                        <th scope="col">Fiyat</th>
+                                        <th scope="col">Adet</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="modalSepetUrunleri"></tbody>
+                            </table>
+                            <div>
+                                <strong>Toplam Fiyat: <span class="modal-toplam-fiyat">0.00</span> ₺</strong>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+       <footer class="py-5 bg-dark">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Anasayfa</a></li>
+              <li class="nav-item"><a href="kategori-kadin.html" class="nav-link px-2 text-muted">Kadın Giyim</a></li>
+              <li class="nav-item"><a href="kategori-erkek.html" class="nav-link px-2 text-muted">Erkek Giyim</a></li>
+              <li class="nav-item"><a href="bize-ulasin.html" class="nav-link px-2 text-muted">Bize Ulaşın</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kullanım Sözleşmesi</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Tüm Hakları Saklıdır</p>
+          </footer>
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      
+        <script src="script.js"></script>
+
+        
+    </body>
+</html>

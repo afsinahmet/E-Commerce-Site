@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TrendFashion</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <style type="text/css">
+        a{
+            text-decoration: auto !important;
+        }
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">TrendFashion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ürünler</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Tüm Ürünler</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="kategori-kadin.html">Kadın Giyim</a></li>
+                                <li><a class="dropdown-item" href="kategori-erkek.html">Erkek Giyim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="bize-ulasin.html">Bize Ulaşın</a></li>
+                    </ul>
+                  
+                        <form class="d-flex">
+                            <button class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#sepetModal">
+                                <i class="bi-cart-fill me-1"></i>
+                                Sepet
+                                <span class="badge bg-dark text-white ms-1 rounded-pill" id="sepetUrunSayisiBadge">0</span>
+                            </button>
+                        </form>
+
+                </div>
+            </div>
+        </nav>
+     
+        <section class="py-5">
+            <div class="container-fluid px-5 my-5">
+              <div class="row justify-content-center">
+                <div class="col-xl-10">
+                  <section class="mb-4">
+
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Bize Ulaşın</h2>
+
+   
+
+    <div class="row">
+
+   
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+    
+                <div class="row">
+
+      
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="Adınız" name="Adınız" class="form-control">
+                            <label for="Adınız" class="">Adınız</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+            
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="Konu" name="Konu" class="form-control">
+                            <label for="Konu" class="">Konu</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="Mesajınız" name="Mesajınız" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="Mesajınız">Mesajınız</label>
+                        </div>
+
+                    </div>
+                </div>
+               
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Gönder</a>
+            </div>
+            <div class="status"></div>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>İstanbul Beylikdüzü</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@siteadresi.com</p>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+                </div>
+              </div>
+            </div>  
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+          <footer class="py-5 bg-dark">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Anasayfa</a></li>
+              <li class="nav-item"><a href="kategori-kadin.html" class="nav-link px-2 text-muted">Kadın Giyim</a></li>
+              <li class="nav-item"><a href="kategori-erkek.html" class="nav-link px-2 text-muted">Erkek Giyim</a></li>
+              <li class="nav-item"><a href="bize-ulasin.html" class="nav-link px-2 text-muted">Bize Ulaşın</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kullanım Sözleşmesi</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Tüm Hakları Saklıdır</p>
+          </footer>
+  
+  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+        <script src="script.js"></script>
+        
+    </body>
+</html>
